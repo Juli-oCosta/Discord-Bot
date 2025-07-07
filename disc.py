@@ -5,7 +5,7 @@ class MeuPrimeiroBot(discord.Client):
     def __init__(self):
         intents = discord.Intents.all()
         super().__init__(
-            command_prefix="!"
+            command_prefix="!",
             intents=intents
         )
         self.tree = app_commands.CommandTree(self)
