@@ -29,12 +29,12 @@ async def falaUsuario(interaction:discord.Interaction):
 
 @bot.tree.command(name="soma", description="Some dois números.")
 @app_commands.describe(
-    numero1 = "Primeiro número a somar.",
-    numero2 = "Segundo número a somar." 
+    num1 = "Primeiro número a somar.",
+    num2 = "Segundo número a somar." 
 )
-async def somaNumeros(interaction:discord.Interaction, numero1:int, numero2:int):
-    resultado = numero1 + numero2
-    mensagem = f"A opa {interaction.user.mention} o negócio é o seguinte, falaro que {numero1} + {numero2} = {resultado}"
+async def somaNumeros(interaction:discord.Interaction, num1:int, num2:int):
+    resultado = num1 + num2
+    mensagem = f"A opa {interaction.user.mention} o negócio é o seguinte, falaro que {num1} + {num2} = {resultado}"
     if resultado == 24:
         mensagem += " (viisheee)"
         
