@@ -8,10 +8,8 @@ from mensagens import mensagens_sex_ta
 from mensagens import mensagens_quinta
 from mensagens import mensagens_aviso
 
-global contagem_sex_ta
 contagem_sex_ta = 0
 
-global dia_atual
 dia_atual = datetime.date.today()
 ano, semana, dia_da_semana = dia_atual.isocalendar()
 
